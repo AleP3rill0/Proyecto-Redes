@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aqui te informaremos sobre el cifrado de clave públca y firmas digitales</h1>
+            </div>
+    </header>
+
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <img src="img/clave publica.webp" alt="" class="img-galeria">
+                <h3>CIFRADO DE CLAVE PÚBLICA</h3>
+                <p>Es el primer avance realmente revolucionario en cuanto algoritmos de cifrado en, literalmente, miles de años. Y esto es debido a que el algoritmo de clave pública se basa en funciones
+                    
+                    matemáticas en lugar de en operaciones simples sobre patrones de bits. Pero más importante aún,
+                    
+                    la criptografía de clave pública es asimétrica, suponiendo el uso de dos claves diferentes, en contraste con el cifrado simétrico convencional, que sólo utiliza una. El uso de dos claves tiene profundas consecuencias en las áreas de privacidad, distribución de claves y autenticación.
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/algoritmo.jpg" alt="" class="img-galeria">
+                <h3>ALGORITMO DE CIFRADO DE CLAVE PÚBLICA RSA</h3>
+                <p>Uno de los primeros esquemas de clave pública fue desarrollado en 1977 por Ron Rivest, Adi Sha-
+                    mir y Len Adleman en el MIT y publicado por primera vez en 1978 [RIVE78]. El esquema RSA
+                    
+                    ha predominado desde entonces como la única aproximación al cifrado de clave pública amplia-
+                    mente aceptada e implementada. RSA es un cifrador de bloque en el que el texto nativo y el texto
+                    
+                    cifrado son enteros entre 0 y n-1, para algún n.
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/gestion de claves.jpg" alt="" class="img-galeria">
+                <h3>GESTION DE CLAVES</h3>
+                <p>En el cifrado simétrico, un requisito fundamental para que dos partes se comuniquen de una forma
+                    segura es que compartan una clave secreta.
+                    <img src="img/Gestores_Contraseñas_1.jpg" alt="" class="img-galeria">
+                    <img src="img/Administrador-Contrasenas.png" alt="" class="img-galeria">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="servicios contenedor" id="servicios">
+        <h2>INFORMACION</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <img src="img/firma_digital.jpg" alt="" class="img-galeria">
+                <h3>FIRMA DIGITAL</h3>
+                <p>Suponga que Roberto quiere enviar un mensaje a Alicia y, aunque no es importante que el mensaje
+                    se mantenga secreto, quiere que Alicia tenga la certeza de que el mensaje proviene efectivamente
+                    de él. En este caso, Roberto utiliza su propia clave privada para cifrar el mensaje. Cuando Alicia
+                    
+                    recibe el texto cifrado, comprueba que puede descifrarlo con la clave pública de Roberto, demostrando así que el mensaje ha tenido que ser cifrado por Roberto. Nadie más tiene la clave privada
+                    
+                    de Roberto y, por tanto, nadie más ha podido crear el texto cifrado que pudo ser descifrado con su
+                    
+                    clave pública. De esta forma, todo el mensaje cifrado sirve como firma digital. Además, es imposible alterar el mensaje sin acceder a la clave privada de Roberto, por lo que el mensaje está
+                    
+                    autenticado en términos de origen e integridad de los datos.En el esquema anterior, se cifra el mensaje entero, lo que, aunque valida al autor y al conteni-
+                    do, requiere una gran cantidad de almacenamiento. Cada documento debe guardarse en texto nati-
+                    vo para su utilización, por motivos prácticos. Se debe guardar también una copia del texto cifrado
+                    
+                    para que se pueda verificar el origen y el contenido en caso de disputa. Una forma más eficiente de
+                    lograr el mismo resultado consiste en cifrar un pequeño bloque de bits que sea una función del
+                    documento. Este bloque, llamado código de autenticación, debe poseer la propiedad de que no sea
+                    
+                    factible modificar el documento sin cambiar el código de autenticación. Si el código de autentica-
+                    ción se cifra con la clave privada del emisor, éste sirve como una firma que verifica al origen, al
+                    
+                    contenido y a la secuencia. Un código seguro de dispersión como SHA-1 puede realizar esta función.</p>
+            </div>
+            <div class="servicio">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>MAS SOBRE EL CIFRADO DE CLAVE PUBLICA RSA Y GESTION DE CLAVES</h3>
+                <img src="img/RSA clave.jpg" alt="" class="img-galeria">
+                <img src="img/gestion de claves ej.jpg" alt="" class="img-galeria">
+                <p>La solución a este problema es el certificado de clave pública. En esencia, un certificado
+                    consta de una clave pública más un identificador de usuario del propietario de la clave, todo ello
+                    
+                    firmado por una tercera parte de confianza. Normalmente la tercera parte es una autoridad de certi-
+                    ficación (CA, Certificate Authority) en la que confía la comunidad de usuarios, como una agencia
+                    
+                    del gobierno o una institución financiera. Un usuario puede presentar su clave pública a la autori-
+                    dad de un modo seguro y obtener un certificado. El usuario puede entonces publicar el certificado.
+                    
+                    Cualquiera que necesite la clave pública de este usuario puede obtener el certificado y verifi-
+                    car que es válido mediante la firma adjunta en que se confía.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/rsa.jpg" alt="" class="img-galeria">
+                <h3>GESTION PROFUNDA DE CLAVES</h3>
+                <p>Supongamos que Roberto quiera crear una aplicación
+
+                    para enviar mensajes que le permita intercambiar correo electrónico de forma segura con cualquie-
+                    ra que tenga acceso a Internet o a alguna otra red que ambos compartan. Supongamos que Roberto
+                    
+                    quiere utilizar sólo cifrado simétrico. Con el cifrado simétrico, Roberto y su corresponsal, digamos,
+                    
+                    Alicia, deben plantearse una manera para compartir una clave secreta única que nadie más conoz-
+                    ca. ¿Cómo van a hacer esto? Si Alicia está en la habitación contigua, Roberto puede generar la
+                    
+                    clave y escribirla en un papel o almacenarla en un disquete y entregársela a Alicia. Pero si Alicia
+                    está en la otra parte del continente o del mundo, ¿qué puede hacer Roberto? Bien, podría cifrar la
+                    clave utilizando cifrado simétrico y enviarla por correo electrónico a Alicia, pero esto significa que
+                    Roberto y Alicia deben compartir una clave secreta para poder cifrar esta nueva clave secreta. Más
+                    aún, Roberto y cualquiera que utilice este nuevo paquete de correo electrónico se debe enfrentar al
+                    
+                    mismo problema con cualquier potencial corresponsal: cada pareja de corresponsales debe compar-
+                    tir una clave secreta única.El problema más difícil para utilizar cifrado simétrico consiste en cómo distribuir las claves
+                    secretas de forma segura. Este problema desaparece en el cifrado de clave pública por el simple
+                    hecho de que nunca se distribuye la clave privada. Si Roberto quiere establecer correspondencia
+                    con Alicia y otras personas, genera un único par de claves, una privada y otra pública. Entonces
+                    guarda la clave privada de forma segura y difunde la clave pública a todos sin excepción. Si Alicia
+                    hace lo mismo, entonces Roberto tiene la clave pública de Alicia, Alicia tiene la clave pública de
+                    Roberto y ya pueden comunicarse con seguridad.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>6°1°<span>Group A</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Maximiliano Caceres</p>
+    </footer>
+</body>
+
+</html>
