@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aqui te informaremos sobre la capa de sockets segura (ssl) y la capa de transporte segura (tls)</h1>
+            </div>
+    </header>
+
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <img src="img/ssl.jpg" alt="" class="img-galeria3">
+                <h3>¿Qué es el SSL?</h3>
+                <p>SSL es la tecnología de seguridad estándar para establecer un enlace cifrado entre un servidor web y un navegador. Este enlace protege la privacidad de todos los datos que se comuniquen entre el servidor web y el navegador.Los datos que compartes pueden ser de cualquier tipo, desde información bancaria, fiscal, de identidad, tus contactos, etc. En la jerga de los hackers, esta intercepción se conoce como «ataque de intermediario». El ataque puede ocurrir de varias maneras, pero una de las más comunes es cuando un hacker coloca un pequeño programa de espionaje indetectable en el servidor que aloja un sitio web. Ese programa espera en segundo plano y, cuando un visitante comienza a escribir sus datos en el sitio, se activa para captar la información y enviársela al hacker. 
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/Secure-Docker.jpg" alt="" class="img-galeria1">
+                <h3>TLS Y SSL</h3>
+                <p>Uno de los servicios de seguridad más ampliamente utilizados es el de capa de sockets segura (SSL) y el posterior estándar de Internet conocido como capa de transporte segura (TLS), definido este último en el RFC 2246. SSL es un servicio de propósito general implementado como un conjunto de protocolos que hacen uso de TCP. En este nivel, existen dos elecciones de implementación. Para una completa generalidad, SSL (o TLS) podría suministrarse como parte de la familia de protocolos subyacente y, de esta forma, ser transparente a las aplicaciones. Alternativamente, SSL puede integrarse en paquetes específicos. Por ejemplo, los navegadores Netscape y Microsoft Explorer vienen equipados con SSL y la mayoría de los servidores web implementan este protocolo.
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/tls.png" alt="" class="img-galeria">
+                <h3>¿Qué es el TLS?</h3>
+                <p>El TLS es la siguiente generación del Certificado SSL : permite y garantiza el intercambio de datos en un entorno securizado y privado entre dos entes, el usuario y el servidor, mediante aplicaciones como HTTP, POP3, IMAP, SSH, SMTP o NNTP. Nos referimos al TLS como la evolución del SSL dado que está basado en éste último certificado y funciona de manera muy similar, básicamente: encripta la información compartida.
+                    <img src="img/qué-protege-ssl.png" alt="" class="img-galeria2">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="servicios contenedor" id="servicios">
+        <h2>INFORMACIÓN</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <h3>CERTIFICADO DIGITAL</h3>
+                <img src="img/ssldiagrama.png" alt="" class="img-galeria">
+                <p>Es un documento digital único que garantiza la vinculación entre una persona o entidad con su llave pública (La llave pública es usada para cifrar la información, haciendo una analogía, es como la llave utilizada para cerrar una puerta y mantener fuera a cualquier persona mientras que la llave privada se usa para descifrar, es decir, la llave que abre la puerta y sólo la posee la persona autorizada, por lo tanto ésta debe mantenerse en secreto). Contiene información de su propietario como nombre, dirección, correo electrónico, organización a la que pertenece y su llave pública, así como información propia del certificado por mencionar: periodo de validez, número de serie único, nombre de la AC que emitió, firma digital de la AC cifrada con su llave privada y otros datos más que indican cómo puede usarse ese certificado. </p>
+            </div>
+            <div class="servicio">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VMUsfQQYD7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>¿CÓMO FUNCIONAN LOS TLS Y SSL PARA ASEGURAR LOS DATOS?</h3>
+                <img src="img/SSL-HTTPS.png" alt="" class="img-galeria">
+                <p>Cuando un visitante vaya a su sitio, su navegador web buscará el certificado SSL/TLS de su sitio. A continuación, el navegador realizará un «apretón de manos» para comprobar la validez de su certificado y autentificar su servidor. Si el certificado SSL no es válido, tus usuarios pueden encontrarse con el error “su conexión no es privada”, por lo que abandonen tu sitio web.
+
+                    Una vez que el navegador de un visitante determina que su certificado es válido y autentica su servidor, crea esencialmente un enlace cifrado entre él y su servidor para transportar los datos de forma segura.</p>
+            </div>
+            <div class="servicio">
+                <h3>¿CUÁL DEBERÍA ELEGIR?</h3>
+                <img src="img/sslandtls.jpg" alt="" class="img-galeria">
+                <p>Como tal, SSL no es un protocolo totalmente seguro en 2019 y en adelante.TLS, la versión más moderna de SSL, es segura. Es más, las versiones recientes de TLS también ofrecen ventajas de rendimiento y otras mejoras.
+
+                    No sólo es TLS más seguro y eficiente, sino que la mayoría de los navegadores web modernos ya no soportan SSL 2.0 y SSL 3.0. Por ejemplo, Google Chrome dejó de ser compatible con SSL 3.0 en 2014 y la mayoría de los principales navegadores tienen previsto dejar de ser compatibles con TLS 1.0 y TLS 1.1 en 2020.
+                    
+                    De hecho, Google empezó a mostrar notificaciones de advertencia ERR_SSL_OBSOLETE_VERSION en Chrome.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>6°1°<span>Group A</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Annabella Gonzalez</p>
+    </footer>
+</body>
+
+</html>
