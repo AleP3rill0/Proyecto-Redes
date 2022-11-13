@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aqui te informaremos sobre el protoco-
+                    lo de datagramas de usuario, UDP (User Datagram Protocol).</h1>
+            </div>
+    </header>
+
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <img src="img/clave publica.webp" alt="" class="img-galeria">
+                <h3>UDP: ¿qué es el protocolo UDP?</h3>
+                <p>La comunicación de sistemas en redes domésticas y corporativas locales y en redes públicas como Internet se basa normalmente en la familia de protocolos de Internet. De todos ellos, el más conocido es sin duda el Protocolo de Internet (IP), que no solo es responsable del direccionamiento y la fragmentación de los datagramas, sino que también define cómo se describe la información sobre el origen y el destino. No obstante, la transmisión de los datos se lleva a cabo normalmente mediante el protocolo de transporte TCP (Transmission Control Protocol), orientado a la conexión, por lo que las redes se denominan a menudo redes TCP/IP. Debido a que el protocolo TCP, aunque proporciona seguridad, también retrasa la transmisión, David Patrick Reed publicó en 1980 su idea del protocolo de datagramas de usuario (User datagram protocol o UDP) como una alternativa más simple y rápida al protocolo estándar.
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/algoritmo.jpg" alt="" class="img-galeria">
+                <h3>¿Cómo se estructura la cabecera UDP?</h3>
+                <p>Como es típico en todos los protocolos, los paquetes UDP consisten en una cabecera (header) y los datos reales del usuario. La cabecera UDP contiene toda la información necesaria para la transmisión de datos utilizando el protocolo de transporte y hace que un paquete UDP se pueda identificar como tal. La cabecera UDP consta de 4 campos y está dividida en 2 bloques de 32 bits con la siguiente estructura
+                    Los primeros 16 bits de la cabecera identifican el puerto de origen desde el que se ha enviado un datagrama concreto. El receptor necesita esta información para poder responder al paquete. Ya que UDP funciona sin conexión y básicamente no requiere ninguna comunicación entre el emisor y el receptor, el campo de puerto de origen es opcional. En caso de no ser utilizado, el puerto de origen debe ser puesto a cero.
+
+                </p>
+            </div>
+            <div class="ventaja">
+                
+                <h3>¿Qué aplicaciones utilizan el protocolo UDP?</h3>
+                <p>El protocolo de datagramas de usuario, debido a su estructura mínima y a su falta de mecanismos que garanticen una transmisión completa y exitosa, no puede utilizarse como protocolo de transporte universal . En realidad, fue diseñado desde el principio pensando en aplicaciones que (todavía) no requieren un servicio de transmisión fiable. Por ello, el campo de aplicación del protocolo UDP es limitado, aunque es necesario subrayar su enorme valor, como demuestran los siguientes tipos de aplicación del mismo
+                    <ol>Aplicaciones basadas en best effort delivery</ol>
+                    <ol>Aplicaciones ligeras</ol>
+                    <ol>Aplicaciones con mecanismos propios para una transmisión fiable</ol>
+                    <ol>Aplicaciones multicast</ol>
+                    <ol>Aplicaciones en tiempo real (real time applications)</ol>
+                   
+                    <img src="img/Administrador-Contrasenas.png" alt="" class="img-galeria">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="servicios contenedor" id="servicios">
+        <h2>Características del protocolo UDP</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <img src="img/firma_digital.jpg" alt="" class="img-galeria">
+                <h3>El protocolo UDP funciona sin conexión</h3>
+                <p>el protocolo UDP se caracteriza porque permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión entre el emisor y el receptor. Los datagramas respectivos se envían a la dirección IP preferida de la secuencia especificando el puerto de destino, sin que sea necesario que el ordenador asociado al mismo tenga que dar una respuesta. No obstante, cuando los paquetes tienen que ser devueltos al emisor, existe la posibilidad de incluir en la cabecera UDP información sobre el puerto de origen.</p>
+                <img src="img/seguridad.jpg" alt="" class="img-galeria">
+                <h3>El protocolo UDP no ofrece ninguna garantía de seguridad e integridad de los datos</h3>
+                <p> la ausencia de acuse de recibo mutuo entre el emisor y el receptor garantiza que la velocidad de transmisión en el protocolo UDP sea excelente; no obstante, el protocolo no puede garantizar la seguridad ni la integridad de los datagramas. Tampoco puede garantizar el orden de los paquetes enviados. Por ello, los servicios que utilizan UDP deben aplicar sus propias medidas de corrección y protección.</p>
+            </div>
+            <div class="servicio">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lS4sUfNbF2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>En resumen</h3>
+                <p>La característica más importante del protocolo de datagramas de usuario es que permite enviar datagramas sin que se haya establecido previamente una conexión. Esto se traduce en la ventaja de poder transmitir con gran velocidad, aunque conlleva que la información transmitida sea fácilmente alterada, la pérdida de paquetes no sea corregida y la clasificación de los paquetes sea parcialmente arbitraria. Por esta razón, las aplicaciones UDP deben estar capacitadas para trabajar correctamente con datagramas perdidos o no clasificados y aplicar sus propios mecanismos de corrección y seguridad.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/rsa.jpg" alt="" class="img-galeria">
+                <h3>UDP utiliza puertos: al igual que el TCP</h3>
+                <p>el protocolo UDP utiliza puertos para permitir que los datagramas se transfieran a los protocolos correctos, es decir, a las aplicaciones elegidas del sistema de destino. Los puertos quedan definidos mediante un número conforme a un rango de valores válidos, estando reservado el rango de 0 a 1023 para los servicios fijos.</p>
+                <img src="img/descarga.jpg" alt="" class="img-galeria">
+                <h3>El protocolo UDP permite una comunicación rápida y sin retardos</h3>
+                <p>el protocolo de transporte es el adecuado para una transmisión de datos rápida debido a que no hay que llevar a cabo una configuración de la conexión. Esto resulta también del hecho de que la pérdida de un paquete individual afecta exclusivamente a la calidad de la transmisión. En el caso de conexiones TCP, en cambio, se intenta reenviar de nuevo los paquetes perdidos de forma automática, lo que provoca que todo el proceso de transmisión se detenga.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>6°1°<span>Group A</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por De la fuente Tobias Ezequiel</p>
+    </footer>
+</body>
+
+</html>
