@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aca Te Informaremos Sobre El Protocolo de Información de Encaminamiento, Routing Information Protocol (RIP)</h1>
+            </div>
+        </header>
+
+        <div class="ventajas">
+    <div class="contenido-ventajas contenedor">
+        <div class="ventaja">
+            <img src="img/rip.jpg" alt="" class="img-galeria3" style="width: 250px"> 
+            <h3>¿Qué es el Protocolo de Encaminamiento (RIP)</h3>
+            <p> Routing Information Protocol (RIP), es un protocolo de puerta de enlace interna o interior (Interior Gateway Protocol, IGP) utilizado por los routers o encaminadores para intercambiar información acerca de redes del Internet Protocol (IP) a las que se encuentran conectados. Su algoritmo de encaminamiento está basado en el vector de distancia, ya que calcula la métrica o ruta más corta posible hasta el destino a partir del número de "saltos" o equipos intermedios que los paquetes IP deben atravesar. El límite máximo de saltos en RIP es de 15, de forma que al llegar a 16 se considera una ruta como inalcanzable o no deseable. A diferencia de otros protocolos, RIP es un protocolo libre, es decir, que puede ser usado por diferentes routers y no únicamente por un solo propietario con uno como es el caso de EIGRP que es de Cisco Systems. 
+            </p>
+        </div>
+        <div class="ventaja">
+            <img src="img/images.jpg" alt="" class="img-galeria1">
+            <h3>Caracteristicas</h3>
+            <p>-Tiempo de convergencia: el tiempo de convergencia define con qué rapidez los routers de la topología de la red comparten información de enrutamiento y alcanzan un estado de conocimiento constante. Cuanto más rápida sea la convergencia, más preferible será el protocolo. Los loops de enrutamiento pueden ser el resultado de tablas de encaminamiento incongruentes que no se han actualizado debido a la lenta convergencia de una red sujeta a cambios.
+
+                -Escalabilidad: la escalabilidad define cuán grande puede ser una red según el protocolo de encaminamiento que se implementa. Cuanto más grande sea la red, más escalable debe ser el protocolo de enrutamiento.
+                
+                -Sin clase (uso de VLSM) o con clase: Los protocolos de enrutamiento sin clase incluyen la máscara de subred de las actualizaciones. Esta función admite el uso de la Máscara de subred de longitud variable (VLSM) y una mejor sumarización de ruta. Los protocolos de enrutamiento con clase no incluyen la máscara de subred y no admiten la VLSM.
+                
+                -Uso de recursos: el uso de recursos incluye los requisitos de un protocolo de enrutamiento, como por ejemplo, el espacio de memoria, y la utilización de la CPU y el ancho de banda del enlace. Una mayor cantidad de requisitos de recursos exige hardware más potente para admitir el funcionamiento del protocolo de encaminamiento además de los procesos de reenvío de paquetes.
+                
+                -Implementación y mantenimiento: la implementación y el mantenimiento describen el nivel de conocimiento requerido para que un administrador de red ponga en práctica y mantenga la red según el protocolo de encaminamiento aplicado.
+            </p>
+        </div>
+        <div class="ventaja">
+            <img src="img/versiones.jpg" alt="img-galeria1" style="width: 250px;">
+            <h3>Versiones de Protocolos de Encaminamiento</h3>
+            <p>En la actualidad existen dos versiones de RIP: RIPv1, RIPv2. También existe la versión RIpng, para IPv6.
+
+                RIPv1
+                La definición original, recogida en el RFC 1058, define RIP como un protocolo de enrutamiento con clase, es decir, basado en las clases de las direcciones IP. Por tanto, RIPv1 no soporta máscaras de tamaño variable (VLSM) ni direccionamiento sin clase (CIDR). Esto implica que las redes tratadas por este protocolo deben tener la máscara de red predefinida para su clase de dirección IP, lo que resulta poco eficiente. Además, RIPv1 tampoco incluye ningún mecanismo de autentificación de los mensajes, haciéndolo vulnerable a ataques cibernéticos.
+                
+                Utiliza UDP para enviar sus mensajes a través del puerto 520.
+                
+                RIPv2
+                Debido a las limitaciones de la versión 1, se desarrolla RIPv2 en 1993, y se estandariza finalmente en 1998.3​ Esta versión soporta subredes, permitiendo así CIDR y VLSM. Además, para tener retrocompatibilidad con RIPv1, se mantuvo la limitación de 15 saltos si se está usando el protocolo OSPF o cualquier otro que sirva para direccionamiento en el enlace.
+                
+                Se agregó una característica de "interruptor de compatibilidad"para permitir ajustes de interoperabilidad más precisos. RIPv2 soporta autenticación, utilizando uno de los siguientes mecanismos: no autentificación, autentificación mediante contraseña, y autentificación mediante contraseña codificada mediante MD5 (desarrollado por Ronald Rivest en 1997). Su especificación está recogida en los RFC 1723 y RFC 4822.
+                
+                RIPv2 es el estándar de Internet STD56 (que corresponde al RFC 2453).
+                
+                RIPng
+                RIP para IPv6. Se rige por la RFC 2080.
+                <img src="img/qué-protege-ssl.png" alt="" class="img-galeria2"> 
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<section class="servicios contenedor" id="servicios">
+    <h2>INFORMACIÓN</h2>
+    <div class="contenido-servicios">
+        <div class="servicio">
+            <h3>Ventajas</h3>
+            <img src="img/ssldiagrama.png" alt="" class="img-galeria">
+            <p>RIP es más fácil de configurar (comparativamente a otros protocolos).
+                Implementa un algoritmo de encaminamiento más simple que otros protocolos, por lo que el cálculo de la "mejor" ruta (comparativamente en encaminadores de similares prestaciones) es más rápida.
+                Es soportado por la mayoría de los fabricantes.
+                El protocolo EIGRP de Cisco, patentado por ellos, salva la principal desventaja del nativo protocolo RIP porque valora la mejor métrica, además del número de saltos y otros criterios (ancho de banda, congestión, carga, retardo, fiabilidad, etc.), haciendo más eficiente la red.</p>
+        </div>
+        <div class="servicio">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UXJd3X4Y3Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>¿Còmo funciona el Protocolo de Encaminamiento?</h3>
+            <img src="img/capa.jpg" alt="" class="img-galeria">
+            <p>La principal función de los protocolos de encaminamiento para redes
+                malladas inalámbricas es seleccionar el camino entre el nodo fuente y destino
+                de una manera rápida y fiable. Estas redes pueden utilizar los protocolos de
+                encaminamiento de otras redes ya existentes, pero modificándolos para que
+                funcionen correctamente con ellas. En este trabajo se analizan distintos
+                protocolos de encaminamiento y se presentan sus descripciones para luego
+                compararlos de acuerdo al Tipo de Protocolo, Alcance de trasmisiones y
+                Métrica de ruteo.</p>
+        </div>
+        <div class="servicio">
+            <h3>Desventajas</h3>
+            <img src="img/sslandtls.jpg" alt="" class="img-galeria">
+            <p>Su principal desventaja consiste en que para determinar la mejor métrica, únicamente toma en cuenta el número de saltos, descartando otros criterios (ancho de banda, congestión, carga, retardo, fiabilidad, etc.).
+                El límite máximo de saltos es menor que el de otros protocolos, de forma que solo se puede utilizar en redes de tamaño mediano o pequeño.
+                RIP tampoco está diseñado para resolver cualquier posible problema de enrutamiento. El RFC 1720 (STD 1) describe estas limitaciones técnicas de RIP como graves y el IETF está evaluando candidatos para reemplazarlo, dentro de los cuales OSPF es el favorito. Este cambio está dificultado por la amplia expansión de RIP y necesidad de acuerdos adecuados.
+                El tiempo de convergencia es largo.
+                Sólo se puede utilizar para redes pequeñas.</p>
+    </div>
+</section>
+<footer class="footer">
+    <div class="logo">
+        <h2>6°1°<span>Grupo A</span></h2>
+    </div>
+    <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Thomás Acosta</p>
+</footer>
+</body>
+
+</html>
