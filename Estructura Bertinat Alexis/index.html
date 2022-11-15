@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Requisitos de Seguridad y Ataques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Requisitos de <span>Seguridad</span> y <span>Ataques</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aca Te Informaremos Sobre Seguridad y Ataques</h1>
+            </div>
+    </header>
+    <div class="infoPrin">
+        <p>Para entender los tipos de amenazas a la seguridad que existen, necesitamos partir de una definición de requisitos en seguridad. La seguridad en computadores y en redes implica cuatro requisitos:</p>
+    </div>
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <h3>Privacidad</h3>
+                <p>Se requiere que sólo entidades autorizadas puedan tener un acceso a la informa-ción. Este tipo de acceso incluye la impresión, la visualización y otras formas de revelado, incluyendo el simple hecho de dar a conocer la existencia de un objeto.
+                </p>
+            </div>
+            <div class="ventaja">
+                <h3>Autenticidad</h3>
+                <p>se requiere que un computador o servicio sea capaz de verificar la identidad de un usuario.
+            </div>
+            <div class="ventaja">
+                <h3>Disponibilidad</h3>
+                <p>Se requiere que los datos estén disponibles para las partes autorizadas.
+                </p>
+            </div>
+            <div class="ventaja">
+                <h3>Integridad</h3>
+                <p>Se requiere que los datos sean modificados solamente por partes autorizadas. La modificación incluye la escritura, la modificación, la modificación del estado, la supresión y la creación.
+                </p>
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="infoPrin2">
+        <p>Una forma útil de clasificar los ataques a la seguridad (RFC 2828) es en términos de ataques pasivos y ataques activos. Un ataque pasivo intenta averiguar o hacer uso de información del sistema, pero sin afectar a los recursos del mismo. Un ataque activo intenta alterar los recursos del sistema o influir en su funcionamiento.</p>
+    </div>
+    <section class="ataques contenedor" id="ataques">
+        <div class="contenido-ataques">
+            <div class="ataque">
+                <h3>ATAQUES PASIVOS</h3>
+                <p>Los ataques pasivos consisten en escuchas o monitorizaciones de las transmisiones. La meta del oponente es la de obtener la información que está siendo transmitida. La divulgación del contenido de un mensaje y el análisis de tráfico constituyen dos tipos de ataques pasivos. La divulgación del contenido de un mensaje se entiende fácilmente. Una conversación telefó-nica, un mensaje de correo electrónico o un fichero transferido pueden contener información sensi-ble o confidencial. Por ello, desearíamos impedir que un oponente averigu ̈e el contenido de estas transmisiones. Un segundo tipo de ataque pasivo, el análisis de tráfico, es más sutil. Suponga que dispone-mos de un medio para enmascarar el contenido de los mensajes u otro tipo de tráfico de informa-ción, de forma que aunque los oponentes capturasen el mensaje, no podrían extraer la información del mismo. La técnica más común para enmascarar el contenido es el cifrado. Pero incluso si tene-mos protección por cifrado, el oponente podría todavía observar el patrón de estos mensajes. El oponente podría determinar la localización y la identidad de los computadores que se están comu-nicando y observar la frecuencia y la longitud de los mensajes intercambiados. Esta información podría serle útil para averiguar la naturaleza de la comunicación que se está realizando. Los ataques pasivos son muy difíciles de detectar, ya que no suponen la alteración de los datos. Normalmente, el tráfico de mensajes es enviado y recibido de forma aparentemente normal y ni el emisor ni el receptor son conscientes de que un tercero haya leído los mensajes u observado el patrón de tráfico. Sin embargo, es factible impedir el éxito de estos ataques, usualmente mediante cifrado. De esta manera, el énfasis en la defensa contra estos ataques se centra en la prevención en lugar de en la detección.</p>
+            </div>
+            <div class="ataque">
+                <h3>ATAQUES ACTIVOS</h3>
+                <p>Los ataques activos suponen alguna modificación del flujo de datos o la creación de flujos falsos. Los podemos clasificar en 4 categorías: enmascaramiento, retransmisión, modificación de mensa-jes y denegación de servicio. Un enmascaramiento tiene lugar cuando una entidad pretende ser otra entidad diferente. Un ataque por enmascaramiento normalmente incluye una de las otras formas de ataques activos. Por ejemplo, se pueden capturar secuencias de autenticación y retransmitirlas después de que tenga lu-gar una secuencia válida, permitiendo así obtener privilegios adicionales a otra entidad autorizada con escasos privilegios mediante la suplantación de la entidad que los posee.La retransmisión supone la captura pasiva de unidades de datos y su retransmisión posterior para producir un efecto no autorizado. La modificación de mensajes significa sencillamente que algún fragmento de un mensaje legí-timo se modifica o que el mensaje se retrasa o se reordena para producir un efecto no autorizado. Por ejemplo, un mensaje con un significado «Permitir a Juan García leer el fichero confidencial de cuentas» se modifica para tener el significado «Permitir a Alfredo Castaño leer el fichero confiden-cial de cuentas» La denegación de servicio impide o inhibe el normal uso o gestión de servicios de comunica-ción. Este ataque puede tener un objetivo específico. Por ejemplo, una entidad puede suprimir to-dos los mensajes dirigidos a un destino concreto (por ejemplo, al servicio de vigilancia de seguri-dad). Otro tipo de denegación de servicio es la interrupción de un servidor o de toda una red, bien deshabilitando el servidor o sobrecargándolo con mensajes con objeto de degradar su rendimiento. Los ataques activos presentan características opuestas a las de los ataques pasivos. Mientras que un ataque pasivo es difícil de detectar, existen medidas para impedir que tengan éxito. Por otro lado, es bastante difícil impedir ataques activos de forma absoluta, ya que para hacerlo se requeri-ría protección física permanente de todos los recursos y de todas las rutas de comunicación. En su lugar, el objetivo consiste en detectarlos y recuperarse de cualquier interrupción o retardo causa-dos por ellos. Ya que la detección tiene un efecto disuasorio, también puede contribuir a la pre-vención.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>Business <span>Tecnology</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Bertinat Alexis</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
