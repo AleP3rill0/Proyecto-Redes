@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transporte orientado a Conexión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Capa transporte orientados <span>a Conexión </span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+            </div>
+    </header>
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <h3>Orientado a Conexión</h3>
+                <p>Proporciona el establecimiento, mantenimiento y cierre de una conexión lógica entre usuarios TS. Implica generalmente que el servicio es seguro. Es muy complejo. Garantizan el transporte de todas las unidades de datos de transporte en orden y definen los mecanismos requeridos.
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/py03iUlHLws?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+            <div class="ventaja">
+                <h3>Secuenciamiento seguro</h3>
+                <p>Se utiliza como protocolo extremo a extremo entre dos sistemas  finales conectados en la misma red. La suposición de servicios de red seguros con Secuenciamiento permiten el uso de un protocolo de transporte.
+                </p>
+            </div>
+            <div class="ventaja">
+                <h3>Hay cuatro cuestiones a considerar.</h3>
+                <p>Direccionamiento, Multiplexación, Control de flujo, establecimiento/cierre de la conexión.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="img/sandro.png">
+    <section class="servicios contenedor" id="servicios">
+        <h2>Cuestionamientos</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <h3>Direccionamiento</h3>
+                <p>Está en un usuario de una entidad de transporte dada desea, o bien, establecer una conexión o bien realizar una transferencia de datos sin establecer una conexión con un usuario de otra entidad de transporte. Identificación de usuario, Identificación de la entidad de Transporte, direccion de la estación y Número de red.</p>
+            </div>
+            <div class="servicio">
+                <h3>Multiplexación</h3>
+                <p>El prtocolo de transporte implementa una función de Multiplexación/desmultiplexación. Esto es, usuarios múltiples emplean el mismo protocolo de transporte, y se distinguen unos de otros números de puerto a puntos de acceso al servicio. El transporte tambien podria implementar una función de multiplexación con respecto a los servicios de red que él usa. Se define una multiplexación hacia arriba como la multiplexación de multiples conexiones en una única conexión de la capa inferior, y multiplexación hacia abajo como la división de una única conexión entre múltiples conexiones de capa inferior.</p>
+            </div>
+            <div class="servicio">
+                <h3>Control de flujo</h3>
+                <p>Es un mecanismo sencillo en la capa de enlace, en la capa de transporte es un mecanismo bastante complejo por dos razones:
+                    El retardo de transmisión entre entidades de transporte es generalmente grande comparado con el tiempo de transmisión real. Esto significa que hay un retardo considerable en la comunicación de la información de control de flujo. Ya que la capa de transporte opera sobre una red o un conjunto de redes, la cantidad de retardo en la transmisión puede ser muy variable. Esto hace difícil utilizar de forma efectivo el mecanismo de temporizadores para la retransmisión de los datos perdidos.
+                    En general existen dos razones por las que una entidad de transporte debería moderar la tasa de
+transmisiones de segmentos a través de una conexión desde otra entidad de transporte:
+
+ El usuario de la entidad de transporte receptora no puede mantener el flujo de datos.
+ La propia entidad de transporte receptora no puede mantener el flujo de segmentos. </p>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="logo">
+            <h2>Julián <span>Paolinelli</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; @JulianPaolinelli</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
