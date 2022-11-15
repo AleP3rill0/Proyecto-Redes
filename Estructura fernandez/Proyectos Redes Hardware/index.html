@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informaticas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Arquitectura de servicios Integrados</h1>
+            </div>
+    </header>
+
+    <div class="Arquitectura de servicios integrados">
+        <div class="contenedor Arquitectura de servicios integrados">
+            <div class="Arquitectura de servicios integrados">
+                <h3>ARQUITECTURA DE SERVICIOS INTEGRADOS</h3>
+            
+            </div>
+            <div class="">
+                <h3>ISA</h3>
+                <p>Para satisfacer los requisitos del servicio de QoS, la IETF está desarrollando un conjunto de están-
+                    dares bajo el paraguas general de la arquitectura de servicios integrados (ISA, Integrated Services
+                    
+                    Architecture). ISA, cuya finalidad es la de proporcionar transporte con QoS sobre interconexiones
+                    de redes basadas en IP, se define en términos generales en el RFC 1633, mientras que se están
+                    
+                    desarrollando otros documentos para completar los detalles. De hecho, varios fabricantes han im-
+                    plementado partes de ISA en encaminadores y software de sistemas finales.
+                   <h3>La arquitectura de servicios integrados (ISA) y RSVP están pensados para permitir ofrecer calidad
+                    de servicio (QoS) en Internet y en redes privadas. Aunque ISA en general, y RSVP en particular,
+                    son herramientas útiles para este propósito, dichas características son relativamente complejas de
+                    implementar. Además, pueden no ser lo suficientemente escalables como para tratar grandes volúmenes de tráfico, debido a la cantidad de señalización de control necesaria para coordinar la oferta
+                    de QoS integrada y al mantenimiento de la información de estado necesaria en los dispositivos de encaminamiento.
+                  </h3>   </p>
+                    <img src="img/trafico-de-internet.jpg" alt="" class="img-galeria2">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="TRÁFICO EN INTERNET" id="TRÁFICO EN INTERNET">
+        <h2>TRAFICO EN INTERNET</h2>
+        <div class="contenido-TRÁFICO EN INTERNET">
+            <div class="TRÁFICO EN INTERNET">
+                <p>A medida que la carga en Internet aumenta, así como la diversidad de aplicaciones, existe una
+                    necesidad inmediata de proporcionar niveles diferenciados de QoS a diferentes flujos de tráfico. La
+                    arquitectura de servicios diferenciados (DS, Differentiated Services, RFC 2475) está diseñada para
+                    proporcionar una herramienta simple, fácil de implementar y que suponga una escasa sobrecarga
+                    que ofrezca distintos servicios de red que estén diferenciados según su rendimiento. </p>
+                <p> El tráfico existente en una red o interconexión de redes se puede dividir en dos categorías generales: tráfico elástico y tráfico inelástico. Una consideración de sus diferentes requisitos clarifica la necesidad de una arquitectura de red mejorada. </p>
+            </div>
+            <div class="servicio">
+                <iframe width="560" height="315" src="https://youtu.be/o_Br2vZ4uQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>TRAFICO ELASTICO</h3>
+                <p>El tráfico elástico es aquel que se puede ajustar, sobre un amplio margen, a cambios en el retardo y
+                    rendimiento experimentados a través de un conjunto de redes interconectadas y aun así satisfacer
+                    las necesidades de sus aplicaciones. Éste es el tipo tradicional de tráfico soportado por las redes
+                    basadas en TCP /IP y es el tipo de tráfico para el cual se diseñaron las interconexiones de redes.
+                    Las aplicaciones que generan este tráfico normalmente utilizan TCP o UDP como protocolo de
+                    transporte. En el caso de UDP, la aplicación utilizará tanta capacidad como haya disponible, con el
+                    
+                    límite que imponga la velocidad de la aplicación que genera los datos. En el caso de TCP, la apli-
+                    cación utilizará tanta capacidad como haya disponible hasta un máximo correspondiente a la
+                    
+                    velocidad de datos que el receptor puede aceptar. Además, con TCP, el tráfico en las conexiones
+                    individuales se ajusta a la congestión reduciendo la velocidad a la que se envían los datos por la
+                    red. 
+                </p>
+            </div>
+            <div class="TRAFICO EN INTERNET">
+                <h2>TRAFICO INELASTICO</h2>
+                <p>El tráfico inelástico no se adapta fácilmente, si es que lo hace, a los cambios en el retardo y el
+                    rendimiento que se experimentan en una interconexión de redes. El principal ejemplo lo constituye
+                    el tráfico en tiempo real.</p>
+
+                    <section class="TRÁFICO EN INTERNET" id="TRÁFICO EN INTERNET">
+                        <h2>SERVICIOS ISA</h2>
+                        <div class="contenido-TRÁFICO EN INTERNET">
+                            <div class="TRÁFICO EN INTERNET">
+                                <p>El servicio ISA para un flujo de paquetes se define a dos niveles. Primero, se proporcionan varias
+                                    categorías generales de servicio, cada una de las cuales proporciona cierto tipo general de garantías
+                                    
+                                    de servicio. En segundo lugar, dentro de cada categoría, el servicio que se le da a un flujo particu-
+                                    lar se especifica por los valores de ciertos parámetros. Juntos, a estos valores se les denomina espe-
+                                    cificación de tráfico (TSpec). Actualmente se han definido tres categorías de servicio:
+                                    
+                                    Funcionamiento de la interconexión de redes 659
+                                    
+                                    Garantizado.
+                                    De carga controlada.
+                                    De mejor esfuerzo.
+                                    
+                                    Una aplicación puede solicitar una reserva para un flujo con QoS garantizada o de carga controla-
+                                    da, con una TSpec que defina la cantidad exacta del servicio solicitado. Si se acepta la reserva,
+                                    
+                                    entonces la TSpec forma parte del contrato entre el flujo de datos y el servicio. El servicio acepta
+                                    proporcionar la QoS solicitada mientras que el tráfico del flujo de datos continúe siendo descrito
+                                    de forma precisa por la TSpec. A los paquetes que no formen parte de un flujo reservado se les da
+                                    por defecto un servicio del mejor esfuerzo.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>6°1°<span>Group A</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Fernandez Rita</p>
+    </footer>
+</body>
+
+</html>
