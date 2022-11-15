@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Redes <span>Informaticas</span></h2>
+            </div>
+            <div class="hamburguesa">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="contenido-encabezado contenedor">
+            <div class="texto-encabezado">
+                <h1>Aqui te informaremos sobre las alternativas para la autenticación de mensajes</h1>
+            </div>
+    </header>
+
+    <div class="ventajas">
+        <div class="contenido-ventajas contenedor">
+            <div class="ventaja">
+                <img src="img/cifradosimetrico.jpg" alt="" class="img-galeria">
+                <h3>Autenticación mediante cifrado simétrico</h3>
+                <p>Es posible llevar a cabo la autenticación simplemente mediante el uso del cifrado simétrico. Si
+                suponemos que solamente el emisor y el receptor comparten una clave (que es lo que debe ocurrir),
+                entonces solamente el emisor genuino sería capaz de cifrar un mensaje satisfactoriamente para el
+                otro participante. Es más, si el mensaje incluye un código de detección de errores y un número de
+                secuencia, se le asegura al receptor que no se han efectuado modificaciones y que la secuencia es
+                la adecuada. Si el mensaje incluye también una marca de tiempo, el receptor tiene la seguridad de
+                que el mensaje no se ha retrasado más de lo normalmente esperado en el tránsito por la red.</p>
+            </div>
+            <div class="ventaja">
+                <img src="img/sincifrado.jpg" alt="" class="img-galeria">
+                <h3>Autenticación de mensajes sin cifrado de mensajes</h3>
+                <p>El mensaje mismo no está cifrado y se puede leer en el destino independientemente de la función de autenticación del mismo.
+                    Las técnicas descritas en esta sección no cifran el mensaje, al mensaje no se le proporciona privacidad. Dado que el cifrado simétrico proporciona autenticación y, dado que se utiliza ampliamente en productos existentes.
+                </p>
+            </div>
+            <div class="ventaja">
+                <img src="img/autenticaciondemensajes.png" alt="" class="img-galeria">
+                <h3>Código de autenticación de mensajes</h3>
+                <p>Una técnica de autenticación supone el uso de una clave secreta para generar un pequeño bloque
+                    de datos, conocido como código de autenticación del mensaje (MAC, Message Authentication Code),
+                    e incorporarlo al mismo. Esta técnica supone que dos partes comunicantes, digamos A y B, com-
+                    parten una clave secreta común KAB. Cuando A tiene un mensaje M que enviar a B, calcula el código de autenticación del mensaje como una función del mensaje y la clave: MACM%F(KAB, M).
+                    Luego se transmite el mensaje más el código al destinatario deseado. El destinatario realiza los
+                    mismos cálculos sobre el mensaje recibido, utilizando la misma clave secreta, para generar un nuevo código de autenticación del mensaje.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="servicios contenedor" id="servicios">
+        <h2>INFORMACION</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <img src="img/dispersionunsentido.png" alt="" class="img-galeria">
+                <h3>Función de dispersión de un solo sentido</h3>
+                <p>Una variación del código de autenticación de mensajes al que se le ha prestado mucha atención
+                    recientemente es la función de dispersión de un solo sentido (one-way hash function). Como ocurre
+                    con el código de autenticación de mensajes, una función de dispersión acepta un mensaje M de
+                    longitud variable como entrada y produce un resumen del mensaje de longitud fija H(M) como
+                    salida. A diferencia del MAC, la función de dispersión no toma como entrada una clave secreta.
+                    Para autenticar un mensaje se envía junto a él el resumen del mensaje de forma que el resumen sea
+                    auténtico.</p>
+            </div>
+            <div class="servicio">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sUEXuZzpZso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>FUNCIONES DE DISPERSIÓN SEGURAS</h3>
+                <img src="img/funciondispersion.png" alt="" class="img-galeria">
+                <p>La función de dispersión de un solo sentido, o función de dispersión segura, es importante no sólo
+
+                    para la autenticación de mensajes, sino también para las firmas digitales. En esta sección comenzaremos discutiendo los requisitos de una función de dispersión segura. Después examinaremos una
+                    
+                    de las funciones de dispersión más relevantes, SHA-1.</p>
+                    <h3>Requisitos para una función de dispersión segura</h3>
+                    <p>El objetivo de una función de dispersión es producir una «huella dactilar» de un fichero, mensaje,
+                        u otro bloque de datos. Para que sea útil para la autenticación, una función de dispersión H debe
+                        cumplir las propiedades siguientes:</p>
+                        <ul>
+                            <ol>1. H puede ser aplicada a un bloque de datos de cualquier tamaño.</ol>
+                            <ol>2. H produce una salida de longitud fija.</ol>
+                            <ol>3. Para cualquier x dado, es relativamente fácil calcular H(x), haciendo factibles las imple-
+                                mentaciones hardware y software.</ol>
+                                <ol>4. Para cualquier código h, por limitaciones computacionales, es inviable encontrar un x tal
+                                    que H(x) %h.</ol>
+                                    <ol>5. Para cualquier bloque x, por limitaciones computacionales, es inviable encontrar un y Ç x
+                                        para el que H(y) %H(x).</ol>
+                                        <ol>6. Por limitaciones computacionales, es impracticable encontrar una pareja (x, y) tal que
+                                            H(x) %H(y).</ol>
+                        </ul>
+            </div>
+            <div class="servicio">
+                <img src="img/SHA-1.jpg" alt="" class="img-galeria">
+                <h3>LA FUNCIÓN DE DISPERSIÓN SEGURA SHA-1</h3>
+                <p>El algoritmo de dispersión segura (SHA, Secure Hash Algorithm) fue desarrollado por el NIST y
+                    publicado como estándar federal para el procesamiento de la información (FIPS 180) en 1993. En
+                    1995 se publicó una versión revisada denominada FIPS 180-1, conocida generalmente como SHA-1.</p>
+                    <p>El algoritmo toma como entrada un mensaje con una longitud máxima de 264 bits y produce un
+                        resumen de mensaje de 160 bits. La entrada se procesa en bloques de 512 bits.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <h2>6°1°<span>Group A</span></h2>
+        </div>
+        <p>Todos los derechos reservados <span class="fecha"></span>  &copy; Desarollo por Fabricio Margaria</p>
+    </footer>
+</body>
+
+</html>
